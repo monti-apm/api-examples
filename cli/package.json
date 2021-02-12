@@ -13,9 +13,9 @@
   "author": "zodern",
   "license": "MIT",
   "dependencies": {
+    "asciichart": "^1.5.25",
     "axios": "^0.19.2",
     "graphql-request": "^1.8.2",
-    "sparkly": "^5.0.0",
     "yargs": "^15.1.0"
   }
 }
