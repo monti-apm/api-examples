@@ -1,0 +1,25 @@
+{
+  "name": "trace-explorer",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --settings ./settings.json",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.13",
+    "axios": "^0.19.2",
+    "graphql-request": "^1.8.2",
+    "meteor-node-stubs": "^1.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    }
+  }
+}
