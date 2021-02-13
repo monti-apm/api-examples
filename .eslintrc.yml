@@ -1,8 +1,16 @@
 extends:
   - eslint:recommended
+  - plugin:react/recommended
 parser: babel-eslint
 parserOptions:
   sourceType: module
+
+env:
+  node: true
+  browser: true
+
+plugins:
+  - react
 
 rules:
   no-console: 0
